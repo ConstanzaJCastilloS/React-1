@@ -1,0 +1,138 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*.container {
+  display: flex;
+  margin: 0px;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+/*.container h1 {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 7px 10px;
+}*/
+
+.header {
+  background-image: url(../public/img/pizza.jpg);
+  background-size: cover;
+  height: 30vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 6vh;
+}
+
+.header-line {
+  width: 100%;
+  border: 2px solid white;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  gap: 10px;
+  border: solid rgb(255, 223, 80);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vh;
+  position: relative;
+  padding: 5px;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+}
+
+.cardHeader h2 {
+  font-size: 25px;
+  font-weight: normal;
+  color: black;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+
+.cardBody h3 {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.btnCf {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.cardBtn {
+  width: 15vh;
+  height: 5vh;
+  font-size: 15px;
+  padding: 5px;
+  margin: 0px 30px;
+}
+
+.fondo {
+  height: 10vh;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
