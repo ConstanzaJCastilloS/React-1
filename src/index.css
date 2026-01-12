@@ -39,14 +39,13 @@
 
 .productos {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-evenly;
   padding-top: 5vh;
-  padding-bottom: 5vh;
-  padding-left: 3vh;
-  padding-right: 3vh;
+  gap: 10px;
   margin-left: 2vh;
   margin-right: 2vh;
-  gap: 10px;
   border: solid rgb(255, 223, 80);
 }
 
@@ -55,9 +54,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60vh;
-  position: relative;
-  padding: 5px;
+  width: 360px;
+  border: 2px solid #9b9b9b;
+  border-radius: 8px;
+  padding: 1rem;
+  background: white;
+  
 }
 
 .cardHeader {
@@ -82,12 +84,25 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+
+}
+
+.cardBody ul {
+  margin: 0;
+  padding: 0;
   width: 100%;
+}
+
+.cardBody li {
+  text-align: left;
+  list-style-type: none;
+  margin-bottom: 0.4rem;
 }
 
 .cardBody h3 {
   font-size: 22px;
   font-weight: lighter;
+  margin: 0 0;
 }
 
 .cardFooter {
@@ -100,18 +115,15 @@
   margin-bottom: 3vh;
 }
 
+.cardFooter h3 {
+  margin-top: -15px;
+}
+
 .btnCf {
   display: flex;
   flex-direction: row;
-  justify-content: left;
-}
-
-.cardBtn {
-  width: 15vh;
-  height: 5vh;
-  font-size: 15px;
-  padding: 5px;
-  margin: 0px 30px;
+  margin-top: 8px;
+  gap: 30px;
 }
 
 .fondo {
@@ -124,15 +136,3 @@
   margin-top: 5vh;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
