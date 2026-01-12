@@ -1,0 +1,89 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+    color: black;
+    min-height: calc(85vh - 50px); 
+}
+
+.listaPizzas{
+    display: flex;
+    flex-direction: column;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    gap: 1rem;
+    width: 520px;
+}
+
+.itemPizza{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.itemPizza h4{
+    white-space: nowrap;
+}
+
+.imgPizzaContainer{
+    height: 100%;
+    width: 20%;
+}
+
+.imgPizzaContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.detallePizza{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    font-weight: 600;
+}
+
+.detallePizza h4 {
+    margin: 0;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnPlus{
+    box-sizing: border-box;
+    color: blue;
+    border: 1px solid blue;
+    height: 30px;
+    width: 40px;
+    line-height: 0;
+}
+
+.btnMinus{
+    box-sizing: border-box;
+    color: red;
+    border: 1px solid red;
+    height: 30px;
+    width: 40px;
+    line-height: 0;
+}
+
+.btnpago{
+    box-sizing: border-box;
+    color: rgb(212, 67, 0);
+    border: 2px solid rgb(212, 67, 0);
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+}

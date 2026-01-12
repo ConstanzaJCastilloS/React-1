@@ -1,7 +1,10 @@
 import './index.css';
 import NavigationBar from './componentes/NavigationBar';
-import Home from './componentes/Home';
+//import Registro from './componentes/Registro';
+//import Login from './componentes/Login';
+//import Home from './componentes/Home';
 import Footer from './componentes/Footer';
+import Cart from './componentes/Cart.jsx'
 
 
 function App() {
@@ -9,7 +12,10 @@ function App() {
   return (
     <>
       <NavigationBar></NavigationBar>
-      <Home></Home>
+      {/*<Home></Home>*/}
+      <Cart></Cart>
+      {/*<Login></Login>*/}
+      {/*<Registro></Registro>*/}
       <Footer></Footer>
     </>
   )
