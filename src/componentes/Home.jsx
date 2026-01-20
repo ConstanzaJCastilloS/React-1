@@ -1,14 +1,27 @@
-import Header from "./Header";
-import CardPizza from "./CardPizza";
-import { pizzas } from "../pizzas";
+import { useState, useEffect } from "react"
+import CardPizza from "./CardPizza.jsx"
+import Header from "./Header.jsx"
 
+ 
 const Home = () => {
+  const [pizzas, setPizzas] = useState([])
+
+  const consultarApi = async () => {
+    const url = "http://localhost:5000/api/pizzas"
+    const response = await fetch(url)
+    const data = await response.json()
+    setPizzas(data)
+  }
+
+  useEffect(() => {
+    consultarApi()
+  }, [])
+
   return (
-    <>
-    
-        <Header></Header>
-    
-<div className="productos">
+    <div className="main">
+      <Header/>
+ 
+      <div className="d-flex justify-content-center flex-wrap gap-4 p-4">
         {pizzas.map((pizza) => (
           <CardPizza
             key={pizza.id}
@@ -19,8 +32,8 @@ const Home = () => {
           />
         ))}
       </div>
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default Home;
+export default Home

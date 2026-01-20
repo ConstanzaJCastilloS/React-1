@@ -1,0 +1,77 @@
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+}
+
+.cardHeader h2 {
+  font-size: 25px;
+  font-weight: normal;
+  color: black;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+}
+
+.pizzaDesc {
+    text-align: justify;
+}
+
+.cardBody ul {
+  margin-top: 2px;
+  padding: 1px;
+  width: 100%;
+}
+
+.cardBody li {
+  text-align: left;
+  list-style-type: none;
+  margin-bottom: 0.4rem;
+}
+
+.cardBody h3 {
+  font-size: 22px;
+  font-weight: lighter;
+  margin: 0 0;
+}
+
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+.cardFooter h3 {
+  margin-top: -15px;
+}
+
+.btnCf {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  gap: 30px;
+}
+
+.fondo {
+  height: 10vh;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
