@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import Button from "react-bootstrap/Button"
-import './pizza.css'
+import '../componentes/pizza.css'
 
 const Pizza = () => {
   const [pizza, setPizza] = useState(null)

@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 function NavigationBar() {
 
@@ -11,18 +12,19 @@ function NavigationBar() {
   return (
     <Navbar bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand href="#home">Pizzería Mamma Mía</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">Pizzería Mamma Mía</Navbar.Brand>
         <Nav className="me-auto">
 
           <Button className="nav_button" variant="outline-light" style={{ marginRight: '5px' }}>
-            🍕 Home
+            <Link to="/">🍕 Home</Link>
           </Button>
 
           {token && (
             <>
               <Button className="nav_button" variant="outline-light" style={{ marginRight: '5px' }}>
-                🔓 Profile
+                <Link to="/profile"> 🔓 Profile </Link>
               </Button>
+              
               <Button className="nav_button" variant="outline-light" style={{ marginRight: '5px' }}>
                 🔒 Logout
               </Button>
@@ -32,19 +34,21 @@ function NavigationBar() {
           {!token && (
             <>
               <Button className="nav_button" variant="outline-light" style={{ marginRight: '5px' }}>
-                🔐 Login
+                <Link to="/login">🔐 Login </Link>
               </Button>
+             
               <Button className="nav_button" variant="outline-light" style={{ marginRight: '5px' }}>
-                📝 Register
+                <Link to="/registro">📝 Register </Link>
               </Button>
+            
             </>
           )}
         </Nav>
 
-        {/* Total solo si hay token */}
+
         {!token && (
           <Button variant="outline-info">
-            🛒 Total: ${total}
+            <Link to="/cart">🛒 Total: ${total}</Link>
           </Button>
         )}
       </Container>

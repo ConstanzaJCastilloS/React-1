@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import CardPizza from "./CardPizza.jsx"
-import Header from "./Header.jsx"
+import CardPizza from "../componentes/CardPizza.jsx"
+import Header from "../componentes/Header.jsx"
 
  
 const Home = () => {
